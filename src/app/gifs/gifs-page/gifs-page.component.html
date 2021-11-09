@@ -1,0 +1,24 @@
+<!--<div class="container">-->
+    <div class="row p-8">
+       <div class="col">
+         <app-gifs-buscar></app-gifs-buscar><!--aqui llega el buscar de gifs-buscar-->
+         <!---imprime la busqueda-->
+         <h3>Historial</h3>
+         <ul>
+             <a href="#" *ngFor="let his of historia; let i=index " (click)="buscarHistorial(his)" >
+               <br>
+                {{his | titlecase}}  <!--muestra la informacion con mayusculas las primeras letras-->
+             </a>
+
+         </ul>
+        </div>
+    </div>  
+    <hr>
+    <div class="row">
+      <div class="col">
+        <app-gifs-resultado></app-gifs-resultado><!--aqui inserta los resultados de la busqueda-->
+      </div>
+    </div>
+ <!--</div>--> 
+
+

@@ -1,0 +1,13 @@
+
+<!--tarjeta-->
+<div class="row">
+    <div 
+    *ngFor="let res of resultado" class="card"  style="width: 18rem;">
+    <br>
+    <img src={{res.images.downsized_medium.url}} class="card-img-top" alt={{res.title}}>
+    <div class="card-body">
+      <h5 class="card-title animate__animated animate__bounce animate__fadeInRight">{{res.title}}</h5>
+    </div>
+  </div>
+  <br>
+</div>
